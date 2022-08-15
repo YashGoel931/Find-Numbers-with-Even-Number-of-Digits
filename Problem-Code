@@ -18,4 +18,14 @@ class Solution {
     if(i%2==0) return 1;
         else return 0;
     }
+    //another optimized solution
+    public int findNumbers(int[] nums) {
+      int esum=0;
+    for(int i=0 ; i<nums.length ; i++){
+    if((((int)Math.log10(nums[i])+1)&1)==0){
+        esum++;
+     }
+    }
+    return esum;
+    }
 }
