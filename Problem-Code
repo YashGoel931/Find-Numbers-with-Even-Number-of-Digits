@@ -1,0 +1,21 @@
+class Solution {
+    public int findNumbers(int[] n) {
+        int c=0;
+    for(int i=0 ; i<n.length ; i++)
+       {
+       c=c+on(n[i]);
+      }
+        return c;
+    }
+    public int on(int a)
+    {
+        int i=0;
+    while(a>0)
+        {
+       i++;
+     a=a/10;
+    }
+    if(i%2==0) return 1;
+        else return 0;
+    }
+}
